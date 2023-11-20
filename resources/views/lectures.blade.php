@@ -5,7 +5,8 @@
 @foreach ($lectures as $lecture)
 
 <div class="video-list d-flex">
-    <a href="#"><img src="{{$lecture['image']}}" class="thumbnail" alt=""></a>
+    <a href="/lectures/{{$lecture['id']}}">
+        <img src="{{$lecture['image']}}" class="thumbnail" alt=""></a>
     <div class="flex-div">
         <img src="{{$lecture['image']}}" alt="lecture-image">
         <div class="video-info">

@@ -20,7 +20,7 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/lecture/{id}',function($id){
+Route::get('/lectures/{id}',function($id){
     return view('lecture' ,[
         'lecture' => Lecture::find($id)
     ]);
