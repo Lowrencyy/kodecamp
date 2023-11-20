@@ -1,17 +1,24 @@
 @extends('layout')
 @section('content')
 
-
 @unless (count($lectures) == 0)
-    @foreach ($lectures as $lecture)
-    <a href="/lecture/{{$lecture['id']}}">
-        <h2>{{$lecture['title']}}</h2>
-        <h2>{{$lecture['lectureName']}}</h2>
-       <p>{{$lecture['description']}}</p>
-       {{-- <iframe width="560" height="315" src={{$student['video']}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> --}}
-       <img src={{$lecture['image']}} alt="img-logo"></a>
+@foreach ($lectures as $lecture)
+
+<div class="video-list d-flex">
+    <a href="#"><img src="{{$lecture['image']}}" class="thumbnail" alt=""></a>
+    <div class="flex-div">
+        <img src="{{$lecture['image']}}" alt="lecture-image">
+        <div class="video-info">
+            <a href="#">{{$lecture['lectureName']}}</a>
+            <p class="text-center">{{$lecture['description']}}</p>
+            <ul class="text-center">
+                <li>{{$lecture['tags']}}</li>
+            </ul>
+            {{-- <p class="text-center">HTML,CSS</p> --}}
+        </div>
+    </div>
+</div>
+
     @endforeach
-    @else
-    <p>no lecture found</p>
-@endunless
-@endsection
+    @endunless
+ @endsection
