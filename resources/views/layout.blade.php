@@ -3,19 +3,17 @@
     <!---sidebar start-->
     <div class="sidebar">
         <div class="shortcut">
-            <a href=""><img src="img/home.pn" alt="">
+            <a href=""><img src="/assets/lecturesImage/home.png" alt="home-icon">
                 <p>Home</p></a>
-            <a href=""><img src="img/explore.pn" alt=""><p>Popular</p></a>
-            
-            <a href=""><img src="img/library.pn" alt=""><p>Library</p></a>
+            <a href=""><img src="/assets/lecturesImage/explore.png" alt=""><p>Popular</p></a>
+            <a href=""><img src="/assets/lecturesImage/messages.png" alt=""><p>Messages</p></a>      
+            <a href=""><img src="img/messages.pg" alt=""><p>Student Feedback</p></a>      
             <a href=""><img src="img/history.pn" alt=""><p>Installer & Tools</p></a>
             <a href=""><img src="img/playlist.pg" alt=""><p>Playlist</p></a>
-            <a href=""><img src="img/messages.pg" alt=""><p>Messages</p></a>      
-            <a href=""><img src="img/messages.pg" alt=""><p>Student Feedback</p></a>      
             <hr>
         </div>
         <div class="subscribed">
-            <h3><b class="text-center">LECTURE LIST</b></h3>
+            <h3><b class="text-center">LECTURE LIBRARY</b></h3>
             <a href=""><img src="/assets/images/tech-stack/html.png" alt=""><p><b>HTML</b></p></a>
             <a href=""><img src="/assets/images/tech-stack/css3.png" alt=""><p><b>HTML</b></p></a>
             <a href=""><img src="/assets/images/tech-stack/bootstrap.png" alt=""><p><b>BOOTSTRAP</b></p></a>
@@ -23,10 +21,11 @@
             <a href=""><img src="/assets/images/tech-stack/js.png" alt=""><p><b>JAVASCRIPT</b></p></a>
             <a href=""><img src="/assets/images/tech-stack/react.png" alt=""><p><b>REACT JS</b></p></a>
             <a href=""><img src="/assets/images/tech-stack/php-logo.png" alt=""><p><b>PHP</b></p></a>
-            <a href=""><img src="/assets/images/tech-stack/laravel" alt=""><p><b>LARAVEL</b></p></a>
+            <a href=""><img src="/assets/images/tech-stack/laravel.png" alt=""><p><b>LARAVEL</b></p></a>
             <a href=""><img src="/assets/images/kodecamp.png" alt=""><p><b>PRESENTATION</b></p></a>
             <a href=""><img src="/assets/images/kodecamp.png" alt=""><p><b>ACTIVITIES</b></p></a>
         </div>
+        <hr>
     </div>
     <!---sidebar end-->
 
