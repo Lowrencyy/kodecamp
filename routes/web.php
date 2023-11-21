@@ -20,7 +20,7 @@ use App\Models\Lecture;
 //create - show form to a create new -> Listing Route::post();
 //store - store data -> new listing
 //edit/update -show form to edit data -> Lecture Route::put(); Route::patch();
-//destroy - delete a data -> Lecture Route::delete();
+//destroy - delete a data -> Lecture Route::
 
 Route::get('/', function () {
     return view('index'

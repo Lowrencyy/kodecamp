@@ -9,7 +9,7 @@ $tags = explode(',' , $tagsCsv)
     <li
       class="flex items-center justify-center  text-white rounded-xl py-1  mr-2 text-xs"
     >
-     ><a href="/?tag={{$tag}}"><b>{{$tag}}</b></a>
+     ><a href="/lectures?tag={{$tag}}">{{$tag}}</a>
     </li>
       
     @endforeach

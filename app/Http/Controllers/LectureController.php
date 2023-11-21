@@ -8,10 +8,11 @@ use Illuminate\Http\Request;
 class LectureController extends Controller
 {
     //show all lectures
-    public function lecture(){
+    public function lecture(Request $request){
+       
         return view('lecture.lectureIndex',[
             'heading' => 'Latest Lecture',
-            'lectures' => Lecture::all()
+            'lectures' => Lecture::latest()->filter(request(['tag']))->get()
         ]);
     }
 
