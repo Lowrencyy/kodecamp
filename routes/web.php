@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LectureController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Lecture;
 /*
@@ -12,7 +13,14 @@ use App\Models\Lecture;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// Common Resource Route/naming 
 
+//index - show all data => Lecture Route::get(); = lecture
+//show - show a single data -> Lecture Route::get(); = video 
+//create - show form to a create new -> Listing Route::post();
+//store - store data -> new listing
+//edit/update -show form to edit data -> Lecture Route::put(); Route::patch();
+//destroy - delete a data -> Lecture Route::delete();
 
 Route::get('/', function () {
     return view('index'
@@ -22,15 +30,6 @@ Route::get('/', function () {
     );
 });
 // this is for student landing page 
-Route::get('/lectures', function () {
-    return view('lectures',[
-        'heading' => 'Latest Lecture',
-        'lectures' => Lecture::all()
-    ]);
-});
+Route::get('/lectures', [LectureController::class,'lecture'] );
 
-Route::get('/lectures/{id}',function($id){
-return view('lecture' , [
-    'lecture' => Lecture::find($id)
-]);
-});
+Route::get('/lectures/{lecture}',[LectureController::class , 'video']);

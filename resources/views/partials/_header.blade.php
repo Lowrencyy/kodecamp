@@ -497,6 +497,10 @@ nav{
     font-size: 2000px;
   }
 
+  .bg-1{
+    color: #26416c
+  }
+
     </style>
 </head>
 <body>

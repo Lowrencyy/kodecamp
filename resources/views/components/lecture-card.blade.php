@@ -1,7 +1,4 @@
-@extends('layout')
-@section('content')
-@unless (count($lectures) == 0)
-@foreach ($lectures as $lecture)
+@props(['lecture'])
 
 <div class="video-list d-flex">
     <a href="/lectures/{{$lecture['id']}}">
@@ -11,18 +8,8 @@
         <div class="video-info">
             <a href="#">{{$lecture['lectureName']}}</a>
             <p class="text-center">{{$lecture['description']}}</p>
-            <ul class="text-center">
-                <li>{{$lecture['tags']}}</li>
-            </ul>
+            <x-lecture-tags :tagsCsv="$lecture->tags"/>
             {{-- <p class="text-center">HTML,CSS</p> --}}
         </div>
     </div>
 </div>
-
-    @endforeach
-    @endunless
-
-
- @endsection
-
- 
