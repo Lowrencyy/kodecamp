@@ -82,7 +82,7 @@
             <div class=" md:mt-0">
                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"data-aos="fade-left">KODECAMP 86 <br>
                 </h1>
-                <span class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aperiam aspernatur autem necessitatibus quibusdam tempore. Laboriosam temporibus minus quam sequi.</span>
+                <span class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">"Explore a platform designed for students offering a range of resources such, as video lectures, study materials and valuable insights from experts. It aims to support your journey and equip you with the tools to succeed not only in your studies but also, in various aspects of life."</span>
                 <!-- <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, a!</p> -->
                 
             </div>
@@ -291,19 +291,19 @@ data-aos-anchor-placement="bottom-bottom">
           <div class="grid gap-8 lg:grid-cols-2">
               <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                   <div class="flex justify-between items-center mb-5 text-gray-500">
-                      <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-                          <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
-                          Tutorial
-                      </span>
-                      <span class="text-sm">14 days ago</span>
+                    <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                        <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
+                       Feedback
+                    </span>
+                      <span class="text-sm">1 days ago</span>
                   </div>
-                  <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing.</a></h2>
-                  <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quasi nobis. Praesentium ducimus aperiam officiis sit officia? Quae iste quos maxime placeat fugit, voluptatum quis voluptates. Minima fugiat quia itaque!</p>
+                  <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">This website has been really helpful, in making my experience at the boot camp much easier.</a></h2>
+                  <p class="mb-5 font-light text-gray-500 dark:text-gray-400">This website has been an invaluable resource for me during my time in the boot camp. With helpful information and resources available on the website, I found my experience much smoother. Overall, the website played a key role in ensuring my success and enjoyment throughout my boot camp journey.</p>
                   <div class="flex justify-between items-center">
                       <div class="flex items-center space-x-4">
-                          <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Leos avatar" />
+                          <img class="w-7 h-7 rounded-full" src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t1.6435-9/80979425_2549341115314855_504870802894618624_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7a1959&_nc_eui2=AeFfY_pYUyupX9aEeRjJYdF7HLYxabG_UFwctjFpsb9QXAUWhm1_E68gGzoi_kfs_nNJE2ROg7-m7fdJXPVuC_8-&_nc_ohc=apPxQb99m1gAX_ZQVmY&_nc_ht=scontent.fmnl9-3.fna&oh=00_AfD8cfx3NjMKc0E6gDkxj4FzSFHZ4Zs-oZ2ZnBU3PSBbMA&oe=6583CC77" alt="Jese Leos avatar" />
                           <span class="font-medium dark:text-white">
-                              Mark Lorenze Borleo
+                              Marrion Dean-Alexis Romero
                           </span>
                       </div>
                       <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
@@ -316,17 +316,17 @@ data-aos-anchor-placement="bottom-bottom">
                   <div class="flex justify-between items-center mb-5 text-gray-500">
                       <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                           <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
-                          Article
+                          Feedback
                       </span>
-                      <span class="text-sm">14 days ago</span>
+                      <span class="text-sm">2 days ago</span>
                   </div>
-                  <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h2>
-                  <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam facilis aspernatur velit. Odio mollitia obcaecati sed, optio voluptatibus vero, ratione voluptas alias, animi provident omnis tempora sequi velit aut.</p>
+                  <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">This website is an awesome tool, for students attending the boot camp.</a></h2>
+                  <p class="mb-5 font-light text-gray-500 dark:text-gray-400">This website is an excellent tool for students like me attending the boot camp. It likely provides helpful resources, such as study materials, that make the boot camp experience much easier and more enjoyable. I this website to be valuable and would definitely recommend it to others.</p>
                   <div class="flex justify-between items-center">
                       <div class="flex items-center space-x-4">
-                          <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Green avatar" />
+                          <img class="w-7 h-7 rounded-full" src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t39.30808-6/314538392_1338304310264926_284691910470125593_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHkFjqbdsVp9_wEwUzcU5qmAuLhy6g0d-cC4uHLqDR35_0BJwfW2t8JqMO2w34Xc4oNbrdvREymnjcYW0t3F4ms&_nc_ohc=_-ooMqt6mrQAX8SOfQx&_nc_ht=scontent.fmnl9-2.fna&oh=00_AfAS69jQf6QOY6GNexdEeMRn4wucmIN4_o_e0GFF6I_cjg&oe=65615A8F" alt="Bonnie Green avatar" />
                           <span class="font-medium dark:text-white">
-                              Cristel Aban
+                              Mark Laurence Tomenio
                           </span>
                       </div>
                       <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
@@ -344,16 +344,16 @@ data-aos-anchor-placement="bottom-bottom">
 <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
   <div class="mx-auto max-w-screen-xl text-center">
       <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
-         <img src="/images/kodego.png" alt="" width="200px">
+         <img src="/assets/images/kodego.png" alt="" width="200px">
         
       </a>
-      <p class="my-6 text-gray-500 dark:text-gray-400">Open-source library of over 400+ web components and interactive elements built for better web.</p>
+      <p class="my-6 text-gray-500 dark:text-gray-400">We teach skills that make you job-ready. At Kodecamp, our students undergo intensive training so they can build successful careers as digital professionals.</p>
       <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
           <li>
               <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
           </li>
           <li>
-              <a href="#" class="mr-4 hover:underline md:mr-6">Premium</a>
+              <a href="#" class="mr-4 hover:underline md:mr-6">Features</a>
           </li>
           <li>
               <a href="#" class="mr-4 hover:underline md:mr-6 ">Campaigns</a>
