@@ -7,9 +7,8 @@
                 <p>Home</p></a>
             <a href=""><img src="/assets/lecturesImage/explore.png" alt=""><p>Popular</p></a>
             <a href=""><img src="/assets/lecturesImage/messages.png" alt=""><p>Messages</p></a>      
-            <a href=""><img src="img/messages.pg" alt=""><p>Student Feedback</p></a>      
-            <a href=""><img src="img/history.pn" alt=""><p>Installer & Tools</p></a>
-            <a href=""><img src="img/playlist.pg" alt=""><p>Playlist</p></a>
+            <a href=""><img src="/assets/lecturesImage/reviews.png" alt=""><p>Student Feedback</p></a>      
+            <a href=""><img src="/assets/lecturesImage/installer.png" alt=""><p>Installer & Tools</p></a>
             <hr>
         </div>
         <div class="subscribed">
@@ -22,10 +21,11 @@
             <a href=""><img src="/assets/images/tech-stack/react.png" alt=""><p><b>REACT JS</b></p></a>
             <a href=""><img src="/assets/images/tech-stack/php-logo.png" alt=""><p><b>PHP</b></p></a>
             <a href=""><img src="/assets/images/tech-stack/laravel.png" alt=""><p><b>LARAVEL</b></p></a>
-            <a href=""><img src="/assets/images/kodecamp.png" alt=""><p><b>PRESENTATION</b></p></a>
-            <a href=""><img src="/assets/images/kodecamp.png" alt=""><p><b>ACTIVITIES</b></p></a>
+            <a href=""><img src="/assets/images/kodego.png" alt=""><p><b>PRESENTATION</b></p></a>
+            <a href=""><img src="/assets/images/kodego.png" alt=""><p><b>ACTIVITIES</b></p></a>
         </div>
         <hr>
+        <img src="/assets/images/kodego.png" alt="">
     </div>
     <!---sidebar end-->
 
