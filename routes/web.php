@@ -13,7 +13,16 @@ use App\Models\Lecture;
 |
 */
 
+
 Route::get('/', function () {
+    return view('index'
+        // [
+        // 'heading' => 'Latest Lecture',
+        // 'lectures' => Lecture::all() ]
+    );
+});
+// this is for student landing page 
+Route::get('/lectures', function () {
     return view('lectures',[
         'heading' => 'Latest Lecture',
         'lectures' => Lecture::all()
@@ -21,7 +30,7 @@ Route::get('/', function () {
 });
 
 Route::get('/lectures/{id}',function($id){
-    return view('lecture' ,[
-        'lecture' => Lecture::find($id)
-    ]);
+return view('lecture' , [
+    'lecture' => Lecture::find($id)
+]);
 });
