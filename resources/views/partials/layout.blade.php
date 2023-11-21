@@ -35,9 +35,7 @@
           <img src="/assets/lecturesImage/banner.jpg" alt="student-banner-image">
         </div>
         <div class="list-container">
-            
-           
-            @yield('content')
+          {{$slot}}
         </div>
     </div>
     <!----main end-->
