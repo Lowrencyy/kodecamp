@@ -40,3 +40,5 @@ Route::post('/admin/lectures' , [LectureController::class,'store']);
 
 Route::get('/lectures/{lecture}',[LectureController::class , 'video']);
 
+
+

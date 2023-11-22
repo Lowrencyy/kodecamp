@@ -15,7 +15,7 @@
                     <iframe width="1280" height="715" src="{{$lecture['video']}}" rel="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                
-                <h3 class="text-center">KODECAMP86 - <b>{{$lecture['lectureName']}}</b></h3>
+                <h3 class="text-center">KODECAMP86 - <b style="color: rgb(30, 102, 102)">"{{$lecture['lectureName']}}"</b></h3>
                 <div class="play-info">
                     <div>
                         <a href=""><img src="/assets/student-image/like.png" alt="">2k</a> 
@@ -35,17 +35,10 @@
                 </div>
                 <hr>
                 <div class="description">
-      
-                    <div class="prev-comnet">
-                        <img src="img/2.png" alt="">
-                        <div>
-                            <h3 class="text-center"> LECTURE DESCRIPTION</h3>
-                            <div class="text-center mt-3 " style="color:red">
-                                {{$lecture['description']}}</div>
-                            
-                        </div>
-                    </div>
-                  
+                    <h2 class="text-center"><b>LECTURE DESCRIPTION</b></h2>
+                    <h5 class="text-center pt-3">
+                        <b>{{$lecture['description']}}</b>
+                    </h5>
                     
                 </div>
             </div>
@@ -63,11 +56,11 @@
                 </div>
                 <div class="side-list">
                     <a href="/lectures/{{$lecture['id']}}" class="small-size">
-                        <img src="/assets/images/tech-stack/html.png" class="thumbnail" alt="" width="20px"></a>
+                        <img src="/assets/images/tech-stack/css3.png" class="thumbnail" alt="" width="20px"></a>
                     <div class="video-info">
                         <a href="video_playing.html" class="pt-10">ALL CSS LECTURE</a>
                         <p>KODECAMP86</p>
-                        {{-- <p>5k views &bull; 1 days</p> --}}
+                        
                     </div>
                 </div>
                 <div class="side-list">
@@ -76,16 +69,7 @@
                     <div class="video-info">
                         <a href="video_playing.html" class="pt-10">ALL CSS LECTURE</a>
                         <p>KODECAMP86</p>
-                        {{-- <p>5k views &bull; 1 days</p> --}}
-                    </div>
-                </div>
-                <div class="side-list">
-                    <a href="/lectures/{{$lecture['id']}}" class="small-size">
-                        <img src="/assets/images/tech-stack/react.png" class="thumbnail" alt="" width="20px"></a>
-                    <div class="video-info">
-                        <a href="video_playing.html" class="pt-10">ALL CSS LECTURE</a>
-                        <p>KODECAMP86</p>
-                        {{-- <p>5k views &bull; 1 days</p> --}}
+                        
                     </div>
                 </div>
                 <div class="side-list">
@@ -94,9 +78,19 @@
                     <div class="video-info">
                         <a href="video_playing.html" class="pt-10">ALL CSS LECTURE</a>
                         <p>KODECAMP86</p>
-                        {{-- <p>5k views &bull; 1 days</p> --}}
+                        
                     </div>
                 </div>
+                <div class="side-list">
+                    <a href="/lectures/{{$lecture['id']}}" class="small-size">
+                        <img src="/assets/images/tech-stack/css3.png" class="thumbnail" alt="" width="20px"></a>
+                    <div class="video-info">
+                        <a href="video_playing.html" class="pt-10">ALL CSS LECTURE</a>
+                        <p>KODECAMP86</p>
+                        
+                    </div>
+                </div>
+              
            
             </div>
         </div>

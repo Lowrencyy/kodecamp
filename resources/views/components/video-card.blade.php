@@ -1,4 +1,4 @@
-{{-- @props(['video'])
+@props(['suggestion'])
 
 <div class="side-list">
     <a href="/lectures/{{$lecture['id']}}" class="small-size">
@@ -14,4 +14,4 @@
 
 
 
-   --}}
+  

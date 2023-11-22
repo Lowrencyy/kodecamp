@@ -24,6 +24,10 @@ class LectureController extends Controller
         ]);
     }
 
+
+
+   
+
     // Show Create Form 
 
     public function create() {
@@ -42,6 +46,18 @@ class LectureController extends Controller
             'github' => 'required',
 
         ]);
+
+        Lecture::create($formFields);
+
         return redirect('/lectures');
     }
+
+
+     // controller for 8 listed in video by kuya sheen 
+
+    //  public function suggested() {
+    //     return view ('lecture.lectureShow', [
+    //         'suggestions' => Lecture::take(8)->get()
+    //     ]);
+    // }
 }
