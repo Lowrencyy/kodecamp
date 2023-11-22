@@ -29,11 +29,14 @@ Route::get('/', function () {
         // 'lectures' => Lecture::all() ]
     );
 });
-// this is for student landing page 
+//all lectures
 Route::get('/lectures', [LectureController::class,'lecture'] );
 
-// route to create lecture 
+//show create form
 Route::get('/admin/create' , [LectureController::class,'create']);
+
+// store create lecture data
+Route::post('/admin/lectures' , [LectureController::class,'store']);
 
 Route::get('/lectures/{lecture}',[LectureController::class , 'video']);
 

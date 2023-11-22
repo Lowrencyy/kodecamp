@@ -650,42 +650,44 @@
                     </button>
                 </div>
                 <!-- Modal body -->
-                <form action="#">
+                <form method="POST" action="/admin/lectures">
+                  @csrf
                     <div class="grid gap-4 mb-4 sm:grid-cols-2">
                         <div>
                             <label for="lectureName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">LECTURE NAME</label>
-                            <input type="text" name="lectureName" id="lectureName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 uppercase" placeholder="LECTURE NAME" required="">
+                            <input type="text" name="lectureName" id="lectureName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 uppercase" placeholder="LECTURE NAME" required>
                         </div>
+                       
                         <div>
                             <label for="tags" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TAGS</label>
                             <input type="text" name="tags" id="tags" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 uppercase" placeholder="TEMPO TAGS" required>
                         </div>
                         <div>
                             <label for="image" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">LECTURE IMAGE</label>
-                            <select id="image" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required>
-                                <option value="{{asset ('assets/images/tech-stack/html.png')}}">HTML</option>
-                                <option value="{{asset ('assets/images/tech-stack/css3.png')}}">CSS</option>
-                                <option value="{{asset ('assets/images/tech-stack/laravel.png')}}">LARAVEL</option>
-                                <option value="{{asset ('assets/images/tech-stack/php-logo.png')}}">PHP</option>
-                                <option value="{{asset ('assets/images/tech-stack/react.png')}}">REACT</option>
-                                <option value="{{asset ('assets/images/tech-stack/mongodb.png')}}">MONGO</option>
-                                <option value="{{asset ('assets/images/tech-stack/js.png')}}">JAVASCRIPT</option>
-                                <option value="{{asset ('assets/images/tech-stack/tailwind.png')}}">TAILWIND</option>
-                                <option value="{{asset ('assets/images/tech-stack/bootstrap.png')}}">BOOTSTRAP</option>
-                                
+                            <select id="image" type="text" name="image" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                <option value="/assets/images/kodego.png">Select Image</option>
+                                <option value="/assets/images/tech-stack/html.png">HTML</option>
+                                <option value="/assets/images/tech-stack/css3.png">CSS</option>
+                                <option value="/assets/images/tech-stack/laravel.png">LARAVEL</option>
+                                <option value="/assets/images/tech-stack/php-logo.png">PHP</option>
+                                <option value="/assets/images/tech-stack/react.png">REACT</option>
+                                <option value="/assets/images/tech-stack/mongodb.png">MONGO</option>
+                                <option value="/assets/images/tech-stack/js,png">JAVASCRIPT</option>
+                                <option value="/assets/images/tech-stack/tailwind.png">TAILWIND</option>
+                                <option value="/assets/images/tech-stack/bootstrap.png">BOOTSTRAP</option> 
                             </select>
                         </div>
                         <div class="sm:col-span-5">
-                            <label for="lecture-video" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">LECTURE LINK </label>
-                            <textarea id="description" rows="1" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="ADD LINK" required></textarea>                    
+                            <label for="video" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">LECTURE LINK </label>
+                            <textarea id="video" type="text" name="video" rows="1" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="ADD LINK" required></textarea>                    
                         </div>
                         <div class="sm:col-span-5">
-                            <label for="lecture-github" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">GITHUB LINK </label>
-                            <textarea id="description" rows="1" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="ADD LINK"></textarea>                    
+                            <label for="github" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">GITHUB LINK </label>
+                            <textarea id="description"  type="text" name="github" rows="1" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="ADD LINK"></textarea>                    
                         </div>
                         <div class="sm:col-span-5">
-                            <label for="lecture-description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">LECTURE DESCRIPTION</label>
-                            <textarea id="lecture-description" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Write product description here" required></textarea>                
+                            <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">LECTURE DESCRIPTION</label>
+                            <textarea id="description" type="text" name="description" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Write product description here" required></textarea>                
                         </div>
                     </div>
                     <button type="submit-lecture" class="text-dark inline-flex items-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
