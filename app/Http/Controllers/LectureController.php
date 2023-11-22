@@ -13,7 +13,7 @@ class LectureController extends Controller
        
         return view('lecture.lectureIndex',[
             'heading' => 'Latest Lecture',
-            'lectures' => Lecture::latest()->filter(request(['tag' , 'search']))->get()
+            'lectures' => Lecture::latest()->filter(request(['tag' , 'search']))->paginate(10)
         ]);
     }
 
@@ -27,9 +27,9 @@ class LectureController extends Controller
     // Show Create Form 
 
     public function create() {
-        return view ('lecture.create');
+        return view ('lecture.lectureList');
     }
-
+  
     //store lecture data    
     public function store(Request $request) {
         // dd($request->all());
@@ -39,9 +39,14 @@ class LectureController extends Controller
             'image' => 'required',
             'video' => 'required',
             'description' => 'required',
-            'github' => 'required',
+            'github' => '', 
 
         ]);
-        return redirect('/lectures');
+
+        Lecture::create($formFields);
+
+        return redirect('/lectures')->with('message' , 'New Lecture Post Created Succesfully!!');
     }
+
+    
 }

@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\LectureController;
-use Illuminate\Support\Facades\Route;
 use App\Models\Lecture;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\LectureController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,21 +23,33 @@ use App\Models\Lecture;
 //edit/update -show form to edit data -> Lecture Route::put(); Route::patch();
 //destroy - delete a data -> Lecture Route::
 
+//All 
 Route::get('/', function () {
-    return view('index'
-        // [
-        // 'heading' => 'Latest Lecture',
-        // 'lectures' => Lecture::all() ]
-    );
+    return view('index');
 });
-//all lectures
-Route::get('/lectures', [LectureController::class,'lecture'] );
-
-//show create form
-Route::get('/admin/create' , [LectureController::class,'create']);
-
-// store create lecture data
+  
+Route::middleware('auth')->group(function () {
+Route::get('/lectures', [LectureController::class,'lecture'] );  
+Route::get('/admin/lecturelist' , [LectureController::class,'create']);
 Route::post('/admin/lectures' , [LectureController::class,'store']);
 
+Route::get('/admin/studentlist' , [UserController::class,'create']);
+Route::post('/users', [UserController::class, 'store']);
 Route::get('/lectures/{lecture}',[LectureController::class , 'video']);
+Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
+  });
 
+  Route::middleware('guest')->group(function(){
+    Route::get('/login' , [UserController::class,'login']);
+    Route::post('/users/authenticate', [UserController::class, 'authenticate']);
+  });
+
+
+
+
+//login routes
+
+
+Route::get('/login' , [UserController::class,'login']);
+
+Route::post('/users/authenticate', [UserController::class, 'authenticate']);

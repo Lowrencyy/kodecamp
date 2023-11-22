@@ -9,6 +9,8 @@ class Lecture extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['lectureName' , 'tags' , 'image' , 'video' , 'description' , 'github'];
+
     public function scopeFilter($query, array $filters) {
         if ($filters['tag'] ?? false){
             $query->where('tags', 'like', '%' . request('tag') . '%');
