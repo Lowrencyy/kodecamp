@@ -41,6 +41,15 @@ Route::post('/admin/lectures' , [LectureController::class,'store']);
 
 Route::get('/lectures/{lecture}',[LectureController::class , 'video']);
 
+//Show Register/Create Form
+Route::get('/admin', [UserController::class, 'create']);
+
+//Create New User
+Route::post('/admin/users', [UserController::class, 'store']);
+
+//Log User Out
+Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
+
 //Show Login Form
 Route::get('/login', [UserController::class, 'login'])->name('login')->middleware('guest');
 

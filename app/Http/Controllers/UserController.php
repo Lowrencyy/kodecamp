@@ -12,7 +12,7 @@ class UserController extends Controller
 
       // Show Register/Create Form
       public function create() {
-        return view('users.register');
+        return view('users');
     }
 
     // Create New User
@@ -32,7 +32,7 @@ $user = User::create($formFields);
 // Login
 auth()->login($user);
 
-return redirect('/')->with('message', 'User created and logged in');
+return redirect('/admin')->with('message', 'User created and logged in');
 }
 
 // Logout User
@@ -42,7 +42,7 @@ auth()->logout();
 $request->session()->invalidate();
 $request->session()->regenerateToken();
 
-return redirect('/')->with('message', 'You have been logged out!');
+return redirect('/index')->with('message', 'You have been logged out!');
 
 }
 
