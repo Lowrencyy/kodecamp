@@ -9,5 +9,5 @@
        <img src={{$lecture['image']}} alt="img-logo"></a>
     @endforeach
     @else
-    <p>no lecture found</p>
+    <p> lecture found</p>
 @endunless
