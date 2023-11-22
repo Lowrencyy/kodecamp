@@ -43,7 +43,7 @@
     </div>
    
         <div>
-            <div class="mt-6 p-4">
+            <div class="text-sm font-normal text-gray-500 dark:text-gray-400">
                 {{$lectures->links()}}
             </div>
         </div>

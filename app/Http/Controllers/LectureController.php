@@ -24,21 +24,12 @@ class LectureController extends Controller
         ]);
     }
 
-
-
-   
-
     // Show Create Form 
 
     public function create() {
         return view ('lecture.lectureList');
     }
-
-    // show student list view 
-    public function add() {
-        return view ('lecture.studentlist');
-    }
-
+  
     //store lecture data    
     public function store(Request $request) {
         // dd($request->all());

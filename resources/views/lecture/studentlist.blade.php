@@ -101,35 +101,13 @@
                 <div class="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
 
                     <!-- button for add lecture  -->
-                  
-
+      
                     <button type="button" id="createProductModalButton" data-modal-target="add-user" data-modal-toggle="add-user" class="flex items-center justify-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">
                         <svg class="h-3.5 w-3.5 mr-2" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path clip-rule="evenodd" fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
                         </svg>
                         ADD USER
                     </button>
-
-                    <!-- ADMIN AND STUDENTS FILTER  -->
-                    <div class="flex items-center space-x-3 w-full md:w-auto">
-                        
-                        <div id="actionsDropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsDropdownButton">
-                                <li>
-                                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">ADMIN</a>
-                                </li>
-                            </ul>
-                            <div class="py-1">
-                                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">STUDENTS</a>
-                            </div>
-                        </div>
-
-                        
-                        
-                    </div>
-                    <!-- admin and student filter end  -->
-
-
                 </div>
             </div>
 
@@ -261,7 +239,7 @@
                 </button>
             </div>
             <!-- Modal body -->
-            <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            {{-- <div class="grid gap-4 mb-4 sm:grid-cols-2">
                 <div>
                     <label for="firstName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
                     <input type="text" name="firstName" id="firstName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="FIRST NAME" required="">
@@ -300,7 +278,7 @@
                     <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
                     <textarea id="description" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Write product description here"></textarea>                    
                 </div> -->
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
@@ -354,6 +332,7 @@
         </div>
     </div>
 </div>
+
 <!-- Delete modal -->
 <div id="deleteModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
     <div class="relative p-4 w-full max-w-md max-h-full">
@@ -395,21 +374,24 @@
                         <span class="sr-only">Close modal</span>
                     </button>
                 </div>
-                <!-- Modal body -->
-                <form action="#">
+
+
+               {{-- USER BODY MODAL  --}}
+                <form method="POST" action="/users">
+                    @csrf
                     <div class="grid gap-4 mb-4 sm:grid-cols-2">
                         <div>
-                            <label for="firstName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
-                            <input type="text" name="firstName" id="firstName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="FIRST NAME" required="">
+                            <label for="firstName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FIRST NAME</label>
+                            <input type="text" name="firstName" id="firstName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Input Firstname" required="">
                         </div>
                         <div>
                             <label for="lastName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lastname</label>
-                            <input type="text" name="lastName" id="lastName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="LAST NAME" required="">
+                            <input type="text" name="lastName" id="lastName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Input Lastname" required="">
                         </div>
                         <div>
                             <div>
-                                <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">USERNAME</label>
-                                <input type="text" name="username" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="FIRST NAME" required="">
+                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">EMAIL</label>
+                                <input type="text" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Input Email Address" required="">
                             </div>
                         </div>
                         <div>
@@ -417,26 +399,23 @@
                             <input type="text" name="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="PASSWORD" required="">
                         </div>
                         <div>
-                            <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">PERMISSION</label>
-                            <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required>
+                            <label for="permission" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">PERMISSION</label>
+                            <select id="permission" name="permission" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required>
                                 <option selected="">Select category</option>
-                                <option value="STUDENT">STUDENT</option>
-                                <option value="ADMIN">ADMIN</option>
+                                <option value="student">STUDENT</option>
+                                <option value="admin">ADMIN</option>
                             </select>
                         </div>
                         <div>
                             <label for="status" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">STATUS</label>
-                            <select id="status" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required>
-                                <option value="ACTIVE">ACTIVE</option>
-                                <option value="INACTIVE">INACTIVE</option>
+                            <select id="status" type="text" name="status" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                                <option value="active">ACTIVE</option>
+                            
                               
                                 
                             </select>
                         </div>
-                        <!-- <div class="sm:col-span-2">
-                            <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
-                            <textarea id="description" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Write product description here"></textarea>                    
-                        </div> -->
+                       
                     </div>
                     <button type="submit-user" class="text-dark inline-flex items-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                         <svg class="mr-1 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
@@ -463,51 +442,7 @@
                     </button>
                 </div>
                 <!-- Modal body -->
-                <form method="POST" action="/admin/lectures">
-                  @csrf
-                    <div class="grid gap-4 mb-4 sm:grid-cols-2">
-                        <div>
-                            <label for="lectureName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">LECTURE NAME</label>
-                            <input type="text" name="lectureName" id="lectureName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 uppercase" placeholder="LECTURE NAME" required>
-                        </div>
-                       
-                        <div>
-                            <label for="tags" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TAGS</label>
-                            <input type="text" name="tags" id="tags" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 uppercase" placeholder="TEMPO TAGS" required>
-                        </div>
-                        <div>
-                            <label for="image" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">LECTURE IMAGE</label>
-                            <select id="image" type="text" name="image" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                <option value="/assets/images/kodego.png">Select Image</option>
-                                <option value="/assets/images/tech-stack/html.png">HTML</option>
-                                <option value="/assets/images/tech-stack/css3.png">CSS</option>
-                                <option value="/assets/images/tech-stack/laravel.png">LARAVEL</option>
-                                <option value="/assets/images/tech-stack/php-logo.png">PHP</option>
-                                <option value="/assets/images/tech-stack/react.png">REACT</option>
-                                <option value="/assets/images/tech-stack/mongodb.png">MONGO</option>
-                                <option value="/assets/images/tech-stack/js,png">JAVASCRIPT</option>
-                                <option value="/assets/images/tech-stack/tailwind.png">TAILWIND</option>
-                                <option value="/assets/images/tech-stack/bootstrap.png">BOOTSTRAP</option> 
-                            </select>
-                        </div>
-                        <div class="sm:col-span-5">
-                            <label for="video" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">LECTURE LINK </label>
-                            <textarea id="video" type="text" name="video" rows="1" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="ADD LINK" required></textarea>                    
-                        </div>
-                        <div class="sm:col-span-5">
-                            <label for="github" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">GITHUB LINK </label>
-                            <textarea id="description"  type="text" name="github" rows="1" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="ADD LINK"></textarea>                    
-                        </div>
-                        <div class="sm:col-span-5">
-                            <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">LECTURE DESCRIPTION</label>
-                            <textarea id="description" type="text" name="description" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Write product description here" required></textarea>                
-                        </div>
-                    </div>
-                    <button type="submit-lecture" class="text-dark inline-flex items-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                        <svg class="mr-1 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
-                        ADD NEW LECTURE
-                    </button>
-                </form>
+             
             </div>
         </div>
     </div>

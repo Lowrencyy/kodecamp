@@ -39,6 +39,12 @@
                     <h5 class="text-center pt-3">
                         <b>{{$lecture['description']}}</b>
                     </h5>
+                    <hr>
+                    <h5 class="text-center pt-3">
+                        <a href="{{$lecture['github']}}" target="_blank">
+                            <h2 class="text-center"><b style="color: red">CLICK ME FOR GITHUB LINK</b></h2>
+                    </a> 
+                    </h5>
                     
                 </div>
             </div>

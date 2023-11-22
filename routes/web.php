@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\LectureController;
-use Illuminate\Support\Facades\Route;
 use App\Models\Lecture;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\LectureController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,5 +44,12 @@ Route::post('/admin/lectures' , [LectureController::class,'store']);
 
 Route::get('/lectures/{lecture}',[LectureController::class , 'video']);
 
+//edit
 
+//show register/create form 
 
+Route::get('/admin/studentlist' , [UserController::class,'create']);
+
+//create new user
+
+Route::post('/users',[UserController::class,'store']);
