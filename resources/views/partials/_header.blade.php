@@ -9,6 +9,7 @@
     {{-- <link rel="stylesheet" href="css/lectures.css"> --}}
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
     <style>
         *{
     padding: 0;

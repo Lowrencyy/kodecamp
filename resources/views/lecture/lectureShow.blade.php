@@ -46,46 +46,46 @@
             
 
                 <div class="side-list">
-                    <a href="/lectures/{{$lecture['id']}}" class="small-size">
-                        <img src="/assets/images/tech-stack/css3.png" class="thumbnail" alt="" width="20px"></a>
+                    <a href="/lectures/2" class="small-size">
+                        <img src="/assets/images/tech-stack/HTML.png" class="thumbnail" alt="" width="20px"></a>
                     <div class="video-info">
-                        <a href="video_playing.html" class="pt-10">ALL CSS LECTURE</a>
+                        <a href="video_playing.html" class="pt-10">INPUT FORMS</a>
                         <p>KODECAMP86</p>
                         
                     </div>
                 </div>
                 <div class="side-list">
-                    <a href="/lectures/{{$lecture['id']}}" class="small-size">
-                        <img src="/assets/images/tech-stack/css3.png" class="thumbnail" alt="" width="20px"></a>
+                    <a href="/lectures?tag=LARAVEL" class="small-size">
+                        <img src="/assets/images/tech-stack/laravel.png" class="thumbnail" alt="" width="20px"></a>
                     <div class="video-info">
-                        <a href="video_playing.html" class="pt-10">ALL CSS LECTURE</a>
+                        <a href="video_playing.html" class="pt-10"><b>LARAVEL LECTURES</b></a>
                         <p>KODECAMP86</p>
                         
                     </div>
                 </div>
                 <div class="side-list">
-                    <a href="/lectures/{{$lecture['id']}}" class="small-size">
+                    <a href="/lectures?tag=CSS" class="small-size">
                         <img src="/assets/images/tech-stack/css3.png" class="thumbnail" alt="" width="20px"></a>
                     <div class="video-info">
-                        <a href="video_playing.html" class="pt-10">ALL CSS LECTURE</a>
+                        <a href="/lectures?tag=CSS" class="pt-10"><b>CSS LECTURE</b></a>
                         <p>KODECAMP86</p>
                         
                     </div>
                 </div>
                 <div class="side-list">
-                    <a href="/lectures/{{$lecture['id']}}" class="small-size">
-                        <img src="/assets/images/tech-stack/css3.png" class="thumbnail" alt="" width="20px"></a>
+                    <a href="/lectures?tag=REACTJS" class="small-size">
+                        <img src="/assets/images/tech-stack/react.png" class="thumbnail" alt="" width="20px"></a>
                     <div class="video-info">
-                        <a href="video_playing.html" class="pt-10">ALL CSS LECTURE</a>
+                        <a href="video_playing.html" class="pt-10"><b>REACT LECTURES</b></a>
                         <p>KODECAMP86</p>
                         
                     </div>
                 </div>
                 <div class="side-list">
-                    <a href="/lectures/{{$lecture['id']}}" class="small-size">
-                        <img src="/assets/images/tech-stack/css3.png" class="thumbnail" alt="" width="20px"></a>
+                    <a href="/lectures?tag=PHP" class="small-size">
+                        <img src="/assets/images/tech-stack/php-logo.png" class="thumbnail" alt="" width="20px"></a>
                     <div class="video-info">
-                        <a href="video_playing.html" class="pt-10">ALL CSS LECTURE</a>
+                        <a href="video_playing.html" class="pt-10"><b>PHP LECTURES</b></a>
                         <p>KODECAMP86</p>
                         
                     </div>
@@ -101,4 +101,3 @@
 {{-- @endsection --}}
 
 
-{{-- 27:13 mins  --}}

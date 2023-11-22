@@ -23,21 +23,26 @@
             <a href="/lectures?tag=LARAVEL"><img src="/assets/images/tech-stack/laravel.png" alt=""><p><b>LARAVEL</b></p></a>
             <a href="/lectures?tag=PRESENTATION"><img src="/assets/images/kodego.png" alt=""><p><b>PRESENTATION</b></p></a>
             <a href="/lectures?tag=ACTIVITIES"><img src="/assets/images/kodego.png" alt=""><p><b>ACTIVITIES</b></p></a>
+            <a href="/lectures?tag=installation"><img src="/assets/images/tech-stack/installation.png" alt=""><p><b>INSTALLATION</b></p></a>
         </div>
         <hr>
         <img src="/assets/images/kodego.png" alt="">
     </div>
+
     <!---sidebar end-->
 
     <!----main start-->
     <div class="container-section">
         <div class="banner">
-          <img src="/assets/lecturesImage/banner.jpg" alt="student-banner-image">
+            <img src="/assets/lecturesImage/banner.jpg" alt="student-banner-image">
         </div>
         <div class="list-container">
-         @yield('content')
+            @yield('content')
         </div>
     </div>
+    
+    <x-flash-message/>
+  
     <!----main end-->
 
     @include('partials._footer')

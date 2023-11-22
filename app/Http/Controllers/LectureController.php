@@ -31,7 +31,12 @@ class LectureController extends Controller
     // Show Create Form 
 
     public function create() {
-        return view ('lecture.create');
+        return view ('lecture.lectureList');
+    }
+
+    // show student list view 
+    public function add() {
+        return view ('lecture.studentlist');
     }
 
     //store lecture data    
@@ -43,21 +48,12 @@ class LectureController extends Controller
             'image' => 'required',
             'video' => 'required',
             'description' => 'required',
-            'github' => 'required',
+            'github' => '', 
 
         ]);
 
         Lecture::create($formFields);
 
-        return redirect('/lectures');
+        return redirect('/lectures')->with('message' , 'New Lecture Post Created Succesfully!!');
     }
-
-
-     // controller for 8 listed in video by kuya sheen 
-
-    //  public function suggested() {
-    //     return view ('lecture.lectureShow', [
-    //         'suggestions' => Lecture::take(8)->get()
-    //     ]);
-    // }
 }

@@ -33,7 +33,10 @@ Route::get('/', function () {
 Route::get('/lectures', [LectureController::class,'lecture'] );
 
 //show create form
-Route::get('/admin/create' , [LectureController::class,'create']);
+Route::get('/admin/lecturelist' , [LectureController::class,'create']);
+
+// create student form 
+Route::get('/admin/studentlist' , [LectureController::class,'add']);
 
 // store create lecture data
 Route::post('/admin/lectures' , [LectureController::class,'store']);
