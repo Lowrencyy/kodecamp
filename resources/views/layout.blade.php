@@ -39,8 +39,15 @@
         <div class="list-container">
             @yield('content')
         </div>
+        
     </div>
-    
+   
+        <div>
+            <div class="mt-6 p-4">
+                {{$lectures->links()}}
+            </div>
+        </div>
+       
     <x-flash-message/>
   
     <!----main end-->

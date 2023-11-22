@@ -5,6 +5,7 @@
             <x-lecture-card :lecture="$lecture"/>
         @endforeach
     @endunless
+  
  @endsection
 
  

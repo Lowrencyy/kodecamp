@@ -16,6 +16,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
+    background-color: white
 }
 
 a{
@@ -36,7 +37,7 @@ nav{
     padding: 10px 2% ;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    background-color: #fff;
+    /* background-color: #fff; */
     position: sticky;
     top: 0;
     z-index: 10;
@@ -88,7 +89,7 @@ nav{
 .sidebar{
     width: 15%;
     height: 100vh;
-    background-color: #fff;
+    /* background-color: #fff; */
     top: 0;
     position:absolute;
     padding-left: 2%;
@@ -116,7 +117,7 @@ nav{
 .sidebar hr{
     border: 0;
     height: 1px;
-    background: #ccc;
+    /* background: #ccc; */
     width: 85%;
 }
 
@@ -158,7 +159,7 @@ nav{
 
 /*----main---*/
 .container-section{
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     padding-left: 17%;
     padding-right: 2%;
     padding-top: 20px;
@@ -505,6 +506,12 @@ nav{
   .bg-1{
     color: #26416c
   }
+
+.ml-cus{
+    margin-right: 40px;
+    margin-top: 20px
+}
+  
 
     </style>
 </head>

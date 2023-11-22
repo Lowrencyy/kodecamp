@@ -13,7 +13,7 @@ class LectureController extends Controller
        
         return view('lecture.lectureIndex',[
             'heading' => 'Latest Lecture',
-            'lectures' => Lecture::latest()->filter(request(['tag' , 'search']))->get()
+            'lectures' => Lecture::latest()->filter(request(['tag' , 'search']))->paginate(10)
         ]);
     }
 
