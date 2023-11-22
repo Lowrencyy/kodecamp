@@ -17,12 +17,12 @@ class LectureFactory extends Factory
     public function definition(): array
     {
         return [
-            'lectureName' => 'Introduction of HTML',
-            'tags' => 'html','backend','css',
+            'lectureName' => 'blocked and inline',
+            'tags' => 'html',
             'image' => 'assets/images/tech-stack/html.png',
             'github' => 'https://github.com/tropangpotchiph86/KodeJobsLaravel',
-            'description' => 'Introduction of HTML',
-            'video' => 'https://www.youtube-nocookie.com/embed/zx7odiPUs6M?si=EY4gQ5hMUSupwsnA&amp;start=1445',
+            'description' => 'HTML blocked and inline',
+            'video' => 'https://www.youtube-nocookie.com/embed/K0A4Ok8kaSw?si=8KUPmlVoHFiT_V80&amp;start=4841',
         ];
     }
 }

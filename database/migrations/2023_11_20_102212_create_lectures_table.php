@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('image');
             $table->string('video');
             $table->text('description');
-            $table->string('github');
+            $table->string('github')->nullable();
             $table->timestamps();
         });
     }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LectureController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Lecture;
 /*
@@ -12,16 +13,30 @@ use App\Models\Lecture;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// Common Resource Route/naming 
+
+//index - show all data => Lecture Route::get(); = lecture
+//show - show a single data -> Lecture Route::get(); = video 
+//create - show form to a create new -> Listing Route::post();
+//store - store data -> new listing
+//edit/update -show form to edit data -> Lecture Route::put(); Route::patch();
+//destroy - delete a data -> Lecture Route::
 
 Route::get('/', function () {
-    return view('lectures',[
-        'heading' => 'Latest Lecture',
-        'lectures' => Lecture::all()
-    ]);
+    return view('index'
+        // [
+        // 'heading' => 'Latest Lecture',
+        // 'lectures' => Lecture::all() ]
+    );
 });
+//all lectures
+Route::get('/lectures', [LectureController::class,'lecture'] );
 
-Route::get('/lecture/{id}',function($id){
-    return view('lecture' ,[
-        'lecture' => Lecture::find($id)
-    ]);
-});
+//show create form
+Route::get('/admin/create' , [LectureController::class,'create']);
+
+// store create lecture data
+Route::post('/admin/lectures' , [LectureController::class,'store']);
+
+Route::get('/lectures/{lecture}',[LectureController::class , 'video']);
+
