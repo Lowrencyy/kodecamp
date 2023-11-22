@@ -1,6 +1,7 @@
 @props(['lecture'])
 
 <div class="video-list">
+  <div>
     <a href="/lectures/{{$lecture['id']}}">
         <img src="{{$lecture['image']}}" class="thumbnail" alt=""></a>
     <div class="flex-div">
@@ -12,4 +13,5 @@
             {{-- <p class="text-center">HTML,CSS</p> --}}
         </div>
     </div>
+  </div>
 </div>

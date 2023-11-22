@@ -32,4 +32,8 @@ Route::get('/', function () {
 // this is for student landing page 
 Route::get('/lectures', [LectureController::class,'lecture'] );
 
+// route to create lecture 
+Route::get('/admin/create' , [LectureController::class,'create']);
+
 Route::get('/lectures/{lecture}',[LectureController::class , 'video']);
+

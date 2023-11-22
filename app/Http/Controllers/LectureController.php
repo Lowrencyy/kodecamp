@@ -22,4 +22,11 @@ class LectureController extends Controller
             'lecture' => $lecture
         ]);
     }
+
+    // Show Create Form 
+
+    public function create() {
+        return view ('lecture.create');
+    }
+
 }
