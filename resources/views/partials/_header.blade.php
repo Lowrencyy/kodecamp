@@ -202,12 +202,15 @@ nav{
 .video-list .flex-div{
     align-items: flex-start;
     margin-top: 7px;
+    /* position: absolute; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.144); */
 }
 
 .video-list .flex-div img{
     width: 35px;
     margin-right: 10px;
     border-radius: 50%;
+
 }
 
 .video-info{

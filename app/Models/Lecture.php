@@ -13,5 +13,15 @@ class Lecture extends Model
         if ($filters['tag'] ?? false){
             $query->where('tags', 'like', '%' . request('tag') . '%');
         }
+
+        if ($filters['search'] ?? false) {
+           $query->where('lectureName' , 'like' , '%' . request('search') . '%')
+           ->orWhere('description' , 'like' , '%' . request('search') . '%')
+           ->orWhere('tags' , 'like' , '%' . request('search') . '%')
+          
+           ;
+        }
     }
+
+
 }
