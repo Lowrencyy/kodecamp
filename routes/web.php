@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\LectureController;
-use Illuminate\Support\Facades\Route;
 use App\Models\Lecture;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\LectureController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,3 +38,8 @@ Route::get('/admin/create' , [LectureController::class,'create']);
 
 Route::get('/lectures/{lecture}',[LectureController::class , 'video']);
 
+//Show Login Form
+Route::get('/login', [UserController::class, 'login'])->name('login')->middleware('guest');
+
+//Login User
+Route::post('/users/authenticate', [UserController::class, 'authenticate']);
