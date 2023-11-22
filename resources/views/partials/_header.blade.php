@@ -417,6 +417,7 @@ nav{
     display: flex;
     align-items: center;
     margin: 20px 0;
+    width: 100%;
 }
 
 .prev-comnet img{

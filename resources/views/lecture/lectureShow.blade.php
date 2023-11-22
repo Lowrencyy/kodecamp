@@ -11,17 +11,12 @@
             <div class="play-vid">
                 
                 
-                <div>
-                    <iframe width="1180" height="615" src="{{$lecture['video']}}" rel="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="ml-15">
+                    <iframe width="1280" height="715" src="{{$lecture['video']}}" rel="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <div class="tags text-center" rel=>
-                    <a href="">#HTML</a>
-                    <a href="">#CSS</a>
-                    <a href="">#Javascript</a>
-                </div>
-                <h3 class="text-center">KODECAMP86 - {{$lecture['lectureName']}}</h3>
+               
+                <h3 class="text-center">KODECAMP86 - <b>{{$lecture['lectureName']}}</b></h3>
                 <div class="play-info">
-                    <!-- <p>5k views &bull; 1 days ago</p> -->
                     <div>
                         <a href=""><img src="/assets/student-image/like.png" alt="">2k</a> 
                         <a href=""><img src="/assets/student-image/dislike.png" alt="">159</a> 
@@ -36,28 +31,18 @@
                         <p>KODECAMP 86</p>
                         
                     </div>
-                   
+                    <p>5k views &bull; 1 days ago</p>
                 </div>
+                <hr>
                 <div class="description">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, tempora!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora suscipit nemo dolorum voluptatibus, rerum ad ducimus laborum. Illo, cumque assumenda.</p>
-                    <hr>
-               
-                    
-                 
+      
                     <div class="prev-comnet">
                         <img src="img/2.png" alt="">
                         <div>
                             <h3 class="text-center"> LECTURE DESCRIPTION</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quasi quod impedit, velit architecto similique ccusantium commodi, veritatis cumque id, velit doloremque ducimus eaque eos dignissimos animi perspiciatis ullam rerum eligendi. Autem.</p>
-                        </div>
-                        <div>
-                            <h3 class="text-center">INSTALLER</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quasi quod impedit, velit architecto similique ccusantium commodi, veritatis cumque id, velit doloremque ducimus eaque eos dignissimos animi perspiciatis ullam rerum eligendi. Autem.</p>
-                        </div>
-                        <div>
-                            <h3 class="text-center">ADDITIONAL INFO</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quasi quod impedit, velit architecto similique ccusantium commodi, veritatis cumque id, velit doloremque ducimus eaque eos dignissimos animi perspiciatis ullam rerum eligendi. Autem.</p>
+                            <div class="text-center mt-3 " style="color:red">
+                                {{$lecture['description']}}</div>
+                            
                         </div>
                     </div>
                   
@@ -73,7 +58,7 @@
                     <div class="video-info">
                         <a href="video_playing.html" class="pt-10">ALL CSS LECTURE</a>
                         <p>KODECAMP86</p>
-                        {{-- <p>5k views &bull; 1 days</p> --}}
+                        
                     </div>
                 </div>
                 <div class="side-list">
