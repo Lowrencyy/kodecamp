@@ -119,7 +119,7 @@
     <div class="bg-white p-2 rounded-lg shadow-md" data-aos="fade-up"
     data-aos-duration="400">
       <img src="{{asset ('assets/images/about-our-team/marrion.png')}}" alt="Team Member 1" class="w-full h-32 object-cover mb-4 rounded-md" style="border-radius: 50%;">
-      <h2 class="text-xl font-semibold text-center">Marrion Dean-alexis Romero</h2>
+      <h2 class="text-xl font-semibold text-center">Marrion Dean-alexis ROmero</h2>
       <p class="text-gray-600 text-center pt-2">Full Stack Web Developer</p>
       <ul class="flex justify-center mt-4 space-x-4">
         <!-- facebook  -->
