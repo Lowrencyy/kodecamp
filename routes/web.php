@@ -53,3 +53,10 @@ Route::get('/admin/studentlist' , [UserController::class,'create']);
 //create new user
 
 Route::post('/users',[UserController::class,'store']);
+
+//login routes
+
+
+Route::get('/login' , [UserController::class,'login']);
+
+Route::post('/users/authenticate', [UserController::class, 'authenticate']);
